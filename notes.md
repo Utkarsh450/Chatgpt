@@ -67,5 +67,7 @@ Using Next.js with getServerSideProps() or default page rendering is SSR.
 Use Case	SSR ✅	CSR ✅
 SEO important (e.g., blog)	✅ Yes	❌ No
 Interactive Web App (e.g., Gmail)	❌ No	✅ Yes
-Fast first load	✅ Yes	❌ No
-Lower server load	❌ No	✅ Yes
+Fast first load	✅ Yes	   ❌ No
+Lower server load	❌ No	 ✅ Yes
+
+In scripts dev => npm run dev

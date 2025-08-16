@@ -1,22 +1,12 @@
-require('dotenv').config();
-const express = require('express');
-const indexRoutes = require('./routes/index.routes');
-const authRoutes = require('./routes/auth.routes');
-const cookieParser = require('cookie-parser');
-const path = require("path")
-
-
+const express = require("express")
 const app = express();
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+const cookieParser = require("cookie-parser")
+const chatRoutes = require("./routes/chat.routes");
+const authRoutes = require("./routes/auth.routes");
 app.use(cookieParser());
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
-app.use(express.static(path.join(__dirname, 'public')));
-// Serve static files from the 'public' directory
+app.use(express.json());
 
-app.use('/', indexRoutes);
-app.use('/auth', authRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/chat", chatRoutes);
 
 module.exports = app;
