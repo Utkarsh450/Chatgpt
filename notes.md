@@ -79,7 +79,7 @@ ring => [-0.009745646465, 0.4465676]
 
 We can also use mongodb vector database in embeddings
 vectors are also known as embeddings we use gemini-embedding-001 for the conversion of the tet in the vectors in the vector database
-we will use pinecone
+we will use pinecone as it is best
 "who is the president of america in 2010" => gemini2 => "someone"
 The vectors of generating response by the ai model are nearly same to the prompt you give
 in this
