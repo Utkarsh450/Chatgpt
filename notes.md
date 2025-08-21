@@ -144,7 +144,7 @@ STM is very costly because in history a lot of data gets added in this which aff
 LLM uses so we normally used to
 show the some of the last messages let it be 7 or 20 not the whole history, so that is the need of the LTM
 
-in the LTM we only show that memory which is similar to the given input by the user withotu giving the complete history, also at the places where LTM is not needed it does not use the LTM just normally works
+in the LTM we only show that memory which is similar to the given input by the user withotu giving the complete history, also at the places where LTM is not needed it does not use the LTM just normally works. we always use ltm then stm
 
 lets say
 ring => [-0.6465456,0.4246546]
